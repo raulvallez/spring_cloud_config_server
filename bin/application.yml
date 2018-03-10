@@ -1,0 +1,21 @@
+#Component Info
+info:
+  component: SpringConfig-Server
+
+# HTTP Server
+server:
+  port: 8888
+
+spring:
+# Spring CloudConfig Server Repository
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/jordiascension/SpringCloudConfig-Server
+  application:
+    name: springcloudserver
+# Spring properties
+  profiles:
+    active: dev
+    
